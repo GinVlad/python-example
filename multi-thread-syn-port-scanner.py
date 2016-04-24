@@ -55,7 +55,7 @@ class scanport(threading.Thread):
 			else:
 				with lock:
 					break
-			queue.task_done()
+			self.queue.task_done()
 
 if __name__ == '__main__':
 	try: 
